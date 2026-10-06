@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AETHERIA // Next-Gen Autonomous AI Intelligence</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- GSAP & ScrollTrigger CDNs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Ambient Background Orbs -->
+    <div class="ambient-glow">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 2L30 9V23L16 30L2 23V9L16 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                    <circle cx="16" cy="16" r="5" fill="currentColor"/>
+                </svg>
+                <span class="logo-text">AETHERIA</span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="#about" class="nav-link">Mission</a>
+                <a href="#features" class="nav-link">Capabilities</a>
+                <a href="#showcase" class="nav-link">Architecture</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#pricing" class="btn btn-secondary magnetic"><span>Sign In</span></a>
+                <a href="#pricing" class="btn btn-primary magnetic"><span>Deploy Core</span></a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>AETHERIA OS v4.2 RELEASED</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+
+            <h1 class="hero-title">
+                Autonomous <span class="gradient-text">Intelligence</span> For The Singularity Era
+            </h1>
+
+            <p class="hero-subtitle">
+                Deploy self-evolving neural clusters that reason, adapt, and execute enterprise operations in real-time with zero-latency cryptographic verification.
+            </p>
+
+            <div class="hero-cta-group">
+                <a href="#pricing" class="btn btn-primary btn-lg magnetic">
+                    <span>Get Started Free</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#showcase" class="btn btn-outline btn-lg magnetic">
+                    <span>Explore Architecture</span>
+                </a>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="99.99">0</span><span class="stat-suffix">%</span>
+                    <span class="stat-label">Neural Uptime</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="4.8">0</span><span class="stat-suffix">ms</span>
+                    <span class="stat-label">Inference Latency</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="150">0</span><span class="stat-suffix">B+</span>
+                    <span class="stat-label">Daily Parameters</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="1200">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Global Enterprises</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Floating Glass Card & Rotating Stamp -->
+        <div class="hero-visual-container">
+            <div class="rotating-stamp">
+                <svg viewBox="0 0 200 200" width="160" height="160">
+                    <path id="curve" fill="transparent" d="M 20, 100 a 80,80 0 1,1 160,0 a 80,80 0 1,1 -160,0"/>
+                    <text font-family="Space Grotesk" font-size="15" font-weight="700" fill="#a78bfa" letter-spacing="3.5">
+                        <textPath href="#curve" startOffset="0%">• AETHERIA CORE • SYSTEM ACTIVE</textPath>
+                    </text>
+                </svg>
+                <div class="stamp-center-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                </div>
+            </div>
+
+            <div class="glass-preview-card">
+                <div class="preview-header">
+                    <div class="dot red"></div>
+                    <div class="dot yellow"></div>
+                    <div class="dot green"></div>
+                    <span class="preview-title">neural_cluster_01.ai</span>
+                </div>
+                <div class="preview-body">
+                    <div class="code-line"><span class="keyword">import</span> aetheria <span class="keyword">as</span> ae</div>
+                    <div class="code-line">cluster = ae.Cluster(sync=<span class="string">"global"</span>)</div>
+                    <div class="code-line">cluster.synthesize_logic(epochs=<span class="number">1000</span>)</div>
+                    <div class="code-line output">> Status: Synapse resonance stable (100%)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission / About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">MISSION STATEMENT</span>
+                <h2 class="section-title">Redefining What AI Can Achieve For Humanity</h2>
+                <p class="section-desc">We build fault-tolerant autonomous networks that seamlessly blend human creativity with hyper-dimensional machine compute.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </div>
+                    <h3>Autonomous Synthesis</h3>
+                    <p>Self-optimizing pipelines that automatically refactor weights and bypass bottlenecks without manual prompt engineering.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </div>
+                    <h3>Quantum Encryption</h3>
+                    <p>Military-grade post-quantum cryptographic wrappers ensuring enterprise data remains entirely confidential and tamper-proof.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                    </div>
+                    <h3>Sub-Millisecond Speed</h3>
+                    <p>Distributed edge hardware clusters delivering instantaneous inference responses across 45 regions worldwide.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features / Bento Grid Section -->
+    <section class="section features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">CAPABILITIES</span>
+                <h2 class="section-title">Engineered For Infinite Scale</h2>
+                <p class="section-desc">Explore the advanced bento architecture powering modern autonomous applications.</p>
+            </div>
+
+            <div class="bento-grid">
+                <!-- Bento Item 1: Large Feature -->
+                <div class="bento-card bento-lg">
+                    <div class="bento-content">
+                        <span class="bento-tag">REAL-TIME TELEMETRY</span>
+                        <h3>Neural Stream Visualizer</h3>
+                        <p>Monitor multi-dimensional latent spaces and gradient descents live with our high-framerate WebGL rendering engine.</p>
+                    </div>
+                    <div class="bento-visual">
+                        <img src="https://picsum.photos/1920/1080?random=1" alt="Neural Stream" loading="lazy">
+                    </div>
+                </div>
+
+                <!-- Bento Item 2: Small Feature -->
+                <div class="bento-card bento-sm">
+                    <div class="bento-content">
+                        <span class="bento-tag">SECURITY</span>
+                        <h3>Zero-Trust Core</h3>
+                        <p>Isolated enclaves protect sensitive workloads from side-channel intrusion.</p>
+                    </div>
+                    <div class="bento-icon-badge">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                </div>
+
+                <!-- Bento Item 3: Small Feature -->
+                <div class="bento-card bento-sm">
+                    <div class="bento-content">
+                        <span class="bento-tag">ADAPTABILITY</span>
+                        <h3>Dynamic RAG</h3>
+                        <p>Vector databases indexed instantly for hyper-accurate context retrieval.</p>
+                    </div>
+                    <div class="bento-icon-badge">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    </div>
+                </div>
+
+                <!-- Bento Item 4: Large Feature -->
+                <div class="bento-card bento-lg">
+                    <div class="bento-content">
+                        <span class="bento-tag">AUTOMATION</span>
+                        <h3>Autonomous Agent Swarms</h3>
+                        <p>Deploy thousands of specialized worker agents that collaborate to solve complex multi-step workflows autonomously.</p>
+                    </div>
+                    <div class="bento-visual">
+                        <img src="https://picsum.photos/1920/1080?random=2" alt="Agent Swarms" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase / Gallery Section -->
+    <section class="section showcase" id="showcase">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">ARCHITECTURE</span>
+                <h2 class="section-title">Inside The Neural Nexus</h2>
+                <p class="section-desc">A visual tour of our decentralized hardware and model topology.</p>
+            </div>
+
+            <div class="showcase-slider">
+                <div class="showcase-item">
+                    <img src="https://picsum.photos/1920/1080?random=3" alt="Nexus Architecture 1" loading="lazy">
+                    <div class="showcase-caption">
+                        <h4>Global Edge Node Topology</h4>
+                        <p>Distributed across 45 Tier-4 data centers with sub-5ms backbone interconnects.</p>
+                    </div>
+                </div>
+                <div class="showcase-item">
+                    <img src="https://picsum.photos/1920/1080?random=4" alt="Nexus Architecture 2" loading="lazy">
+                    <div class="showcase-caption">
+                        <h4>Multi-Modal Tensor Pipeline</h4>
+                        <p>Simultaneous processing of audio, high-res vision, and symbolic logic.</p>
+                    </div>
+                </div>
+                <div class="showcase-item">
+                    <img src="https://picsum.photos/1920/1080?random=5" alt="Nexus Architecture 3" loading="lazy">
+                    <div class="showcase-caption">
+                        <h4>Autonomous Guardrail System</h4>
+                        <p>Deterministic verification layer preventing hallucinations and policy violations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">FLEXIBLE PLANS</span>
+                <h2 class="section-title">Transparent Enterprise Pricing</h2>
+                <p class="section-desc">Scale your neural operations seamlessly from prototype to global deployment.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Tier 1 -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Developer</h3>
+                        <p>For individuals and indie makers exploring autonomous AI.</p>
+                        <div class="price"><span>$0</span><small>/month</small></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> 100k Monthly API Calls</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Standard Inference Speed</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Community Discord Support</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> 2 Agent Workflows</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline magnetic"><span>Start Free</span></a>
+                </div>
+
+                <!-- Tier 2 (Featured) -->
+                <div class="pricing-card featured">
+                    <div class="popular-badge">MOST POPULAR</div>
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <p>For growing teams scaling high-performance AI applications.</p>
+                        <div class="price"><span>$149</span><small>/month</small></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> 5 Million Monthly API Calls</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Sub-Millisecond Priority Edge</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> 24/7 Dedicated Support</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Unlimited Agent Swarms</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary magnetic"><span>Deploy Pro</span></a>
+                </div>
+
+                <!-- Tier 3 -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <p>For large-scale organizations requiring custom fine-tuning & SLA.</p>
+                        <div class="price"><span>Custom</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Unlimited API Calls</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Dedicated GPU Clusters</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> 99.99% Uptime SLA</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Custom On-Premise Deployment</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline magnetic"><span>Contact Sales</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">TESTIMONIALS</span>
+                <h2 class="section-title">Trusted By Industry Leaders</h2>
+                <p class="section-desc">See how engineers and CTOs rely on Aetheria for mission-critical workloads.</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Aetheria reduced our model inference latency by 74% while cutting infrastructure costs in half. Absolutely game-changing."</p>
+                    <div class="author-info">
+                        <img src="https://i.pravatar.cc/150?img=1" alt="Dr. Aris Vance" class="author-avatar" loading="lazy">
+                        <div>
+                            <h4>Dr. Aris Vance</h4>
+                            <span>CTO @ NeuralScale AI</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"The autonomous agent swarms handled our complex data pipeline migration without a single hitch. Incredible architecture."</p>
+                    <div class="author-info">
+                        <img src="https://i.pravatar.cc/150?img=2" alt="Elena Rostova" class="author-avatar" loading="lazy">
+                        <div>
+                            <h4>Elena Rostova</h4>
+                            <span>VP of Engineering @ QuantumLabs</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Zero-trust security and sub-millisecond edge response made passing our enterprise compliance audit effortless."</p>
+                    <div class="author-info">
+                        <img src="https://i.pravatar.cc/150?img=3" alt="Marcus Thorne" class="author-avatar" loading="lazy">
+                        <div>
+                            <h4>Marcus Thorne</h4>
+                            <span>Chief Information Security Officer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA & Footer Section -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="cta-banner">
+                <div class="cta-banner-content">
+                    <h2>Ready to Experience The Singularity?</h2>
+                    <p>Deploy your first autonomous neural cluster in under 60 seconds.</p>
+                </div>
+                <div class="cta-banner-action">
+                    <a href="#pricing" class="btn btn-primary btn-lg magnetic"><span>Get Started Now</span></a>
+                </div>
+            </div>
+
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <a href="#" class="logo">
+                        <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 2L30 9V23L16 30L2 23V9L16 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <circle cx="16" cy="16" r="5" fill="currentColor"/>
+                        </svg>
+                        <span class="logo-text">AETHERIA</span>
+                    </a>
+                    <p>Next-generation autonomous intelligence infrastructure built for high-velocity enterprises.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+                        <a href="#" aria-label="GitHub"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+                        <a href="#" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#features">Neural OS v4</a></li>
+                        <li><a href="#features">Agent Swarms</a></li>
+                        <li><a href="#features">Vector RAG</a></li>
+                        <li><a href="#features">Edge Enclaves</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#">System Status</a></li>
+                        <li><a href="#">Security Audits</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#">Careers <span class="badge-hiring">WE'RE HIRING</span></a></li>
+                        <li><a href="#">Press Kit</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Aetheria Intelligence Inc. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Settings</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js" defer></script>
+</body>
+</html>
